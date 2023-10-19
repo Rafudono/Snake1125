@@ -8,12 +8,11 @@ namespace ConsoleApp18
 {
     partial class Program
     {
-        private static void IncreaseGameScore()
+        public static void DecreaseSnake()
         {
-            // увеличить gameScore на 1
-            gameScore++;
-            Console.Title = $"Current score {gameScore}";
-            
+            CleanTail();
+            snake.Remove(snake.Last());
         }
+           
     }
 }

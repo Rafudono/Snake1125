@@ -8,12 +8,9 @@ namespace ConsoleApp18
 {
     partial class Program
     {
-        private static void IncreaseGameScore()
+        public static bool SnakeEatPoisonedApple()
         {
-            // увеличить gameScore на 1
-            gameScore++;
-            Console.Title = $"Current score {gameScore}";
-            
+            return Poisonedapple[0] == snake[0][0] && Poisonedapple[1] == snake[0][1];
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleApp18
@@ -30,6 +31,9 @@ namespace ConsoleApp18
                 GameOver();
             if (key.Key == ConsoleKey.Spacebar)
                 ChangeGamePause();
+            if (key.Key == ConsoleKey.Enter || key.Key == ConsoleKey.R)
+                Restart();
+            
         }
     }
 }
