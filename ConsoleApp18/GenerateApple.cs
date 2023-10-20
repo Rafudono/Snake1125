@@ -14,7 +14,7 @@ namespace ConsoleApp18
             // назначить полученные числа в координаты apple
             // нарисовать зеленый круг размером 10 на 10 по новым координатам
             for (int i = 0; i < 2; i++)
-                    apple[i] = random.Next(0, 40);
+                    apple[i] = random.Next(0, 40) * 10;
             for (int i = 0; i < snake.Count; i++)
                 if (apple[0] == snake[i][0] && apple[1] == snake[i][1])
                 {
@@ -26,7 +26,7 @@ namespace ConsoleApp18
         private static void GeneratePoisonedApple()
         {
             for (int i = 0; i < 2; i++)
-                Poisonedapple[i] = random.Next(0, 40);
+                Poisonedapple[i] = random.Next(0, 40) * 10;
             for (int i = 0; i < snake.Count; i++)
                 if (Poisonedapple[0] == snake[i][0] && Poisonedapple[1] == snake[i][1])
                 {

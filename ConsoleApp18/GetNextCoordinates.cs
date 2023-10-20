@@ -27,7 +27,7 @@ namespace ConsoleApp18
             if (direction == 2)
             {
                 coordinates[0] = coordinates[0] + 10;
-                if (coordinates[0] >867) coordinates[0] = 0;
+                if (coordinates[0] >860) coordinates[0] = 0;
             }
             if (direction == 3)
             {
@@ -37,7 +37,7 @@ namespace ConsoleApp18
                 if (direction == 4)
             {
                 coordinates[0] = coordinates[0] - 10;
-                if (coordinates[0] < 0) coordinates[0] = 867;
+                if (coordinates[0] < 0) coordinates[0] = 860;
             }
 
             controlBlock = false;
